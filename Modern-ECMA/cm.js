@@ -6,6 +6,8 @@ task.plugin('buble', {}, function * (file, opts) {
         source: relPath(file)
     }, opts);
 
+    console.log('fwfw')
+
     // Transform data
     const output = transform(file.data.toString(), opts);
 
