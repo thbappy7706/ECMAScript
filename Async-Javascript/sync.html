@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  const processOrder = (customer)=>
+  {
+    console.log("Processing order for customer 1");
+    var currentTime = new Date().getTime();
+    while (currentTime + 3000>=new Date().getTime());
+
+    console.log("Order processed for the customer")
+  }
+
+  console.log("Take order for customer 1");
+  processOrder();
+  console.log("The order is complete for the customer")
+</script>
+</body>
+</html>
