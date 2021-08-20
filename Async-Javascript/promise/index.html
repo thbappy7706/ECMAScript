@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const hasMeeting = false;
+    const meeting = new Promise((resolve,reject)=>{
+        if (!hasMeeting)
+        {
+            const meetingDetails = {
+                Name: "Meeting with Tanvir Hossen Bappy",
+                Location: "Google Meet",
+                Topic: "Laravel",
+                Time:"10:00 AM"
+
+        };
+            resolve(meetingDetails)
+        }else {
+            reject(new Error(`Meeting Already Scheduled`))
+        }
+    });
+    meeting
+           .then((res)=>{
+               document.write(JSON.stringify(res))
+           })
+             .catch((err)=>{
+               document.write(err.message)
+             })
+
+</script>
+
+</body>
+</html>
