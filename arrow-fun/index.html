@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //Normal
+    function sayHello() {
+        console.log("Hello, World!");
+    }
+
+    sayHello();
+
+    //arrow func
+
+    let myNameAndAge = (name,age) =>
+    {
+       console.log(`My Name is ${name} and I am ${age} Years Old` );
+    }
+    myNameAndAge("Tanvir Hossen Bappy", 25);
+
+
+    let myCompany = companyName => console.log(companyName);
+    myCompany("MCC Limited");
+
+
+    let workingDays = day => day*5;
+    console.log(workingDays(5));
+</script>
+
+</body>
+</html>
