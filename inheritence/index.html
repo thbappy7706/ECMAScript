@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Tree{
+    constructor(param1,param2) {
+      this.color = param1;
+      this.type =param2;
+    }
+    saySomething() {
+      console.log("Hello Tanvir");
+    }
+
+  }
+  //Inheritance or derived class
+
+  class MyTree extends Tree
+  {
+    constructor(numFruit,typ,col) {
+      super(col,typ);
+      this.NumberOfFruit =numFruit;
+    }
+  }
+
+  let myTreeDescription = new MyTree(100,"Fruit Tree", "Green");
+
+  console.log(myTreeDescription)
+</script>
+</body>
+</html>
