@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    class Vehicle
+    {
+
+        newVar =10;
+        constructor(param1,param2) {
+            this.color = param1;
+            this.passanger= param2;
+        }
+        saySomthingAboutOop()
+        {
+            console.log("Hlw Bappy");
+        }
+    }
+
+
+    class Car extends Vehicle
+    {
+        constructor(numWheel,col,pass) {
+            super(col,pass);
+            this.wheel = numWheel;
+        }
+    }
+
+    let MyCarInfo = new Car(10,"Red",6)
+
+    console.log(MyCarInfo);
+
+</script>
+</body>
+</html>
