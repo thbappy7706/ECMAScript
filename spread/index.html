@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //Spread
+    let num1= [1,2,3,4,5];
+    let num2= [5,6,7,8,9];
+
+    console.log(...num1,...num2);
+
+    let person = {
+        Name: "Tanvir Hossen Bappy",
+        Age:25,
+    }
+
+
+    let otherInfoOfThePerson = {
+        ...person,
+        Nationality:"Bangladesh",
+    }
+
+    console.log(otherInfoOfThePerson)
+
+
+    //Rest Operator
+
+    let MyNumbers = (...numArr) => {
+        console.log(numArr)
+    }
+
+    MyNumbers(num1)
+
+
+</script>
+</body>
+</html>
